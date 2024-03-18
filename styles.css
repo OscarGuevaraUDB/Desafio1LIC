@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 800px;
+    margin: 1rem auto;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 5px 5px grey;
+}
+
+body {
+    padding: 2rem;
+    background-color: lightgray;
+    color: var(--text-color)
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+section {
+    width: 50%;
+    padding: 20px;
+}
+
+header {
+    background-image: url('tunqui.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    color: black;
+    text-shadow: -2px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 3px;
+}
+
+form {
+    text-align: center;
+    display: inline;
+    gap: 10px;
+}
+
+
+form select,
+form input {
+    margin: 0.5em;
+    width: 200px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 2.5em;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.descripcion h4 {
+    flex: 1;
+    text-transform: capitalize;
+}
+
+button {
+    display: block;
+    margin: auto;
+}
+
+.ingresos-egresos-button {
+    background-color: lightgray;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 0px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5px 5px;
+}
+
+#botonIngresos.active,
+#botonEgresos.active {
+    background-color: black;
+}
