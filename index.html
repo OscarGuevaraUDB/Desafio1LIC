@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto Mensual</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <div>
+                <h1>PRESUPUESTO DE</h1>
+                <h2 id="fechaActual">Abril 2025</h2>
+            </div>
+            <div>
+                <h5>Ingresos</h5>
+                <span id="ingresos"> $10.00</span>
+            </div>
+            <div>
+                <h5>Egresos</h5>
+                <span id="egresos">-$5.00 </span>
+            </div>
+            <div>
+                <h5>Porcentaje de Gastos</h5>
+                <span id="porcentaTotal">+12%</span>
+            </div>
+        </header>
+        <div class="flex-container">
+            <section>
+                <h3>Transaccion</h3>
+                <form id="transaccion">
+                    <div>
+                        <select name="tipoTransaccion" id="tipoTransaccion" required>
+                            <option value="" disabled selected>Ingreso | Egreso</option>
+                            <option value="option1">Ingreso</option>
+                            <option value="option2">Egreso</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="text" name="descripcionInput" id="descripcionInput" placeholder="Descripcion"
+                            required>
+                    </div>
+                    <div>
+                        <input type="number" name="monto" id="monto" placeholder="Monto" required value="0" min="0.01"
+                            step="0.01">
+                    </div>
+                    <button type="submit">Agregar</button>
+                </form>
+            </section>
+            <section>
+                <button id="botonIngresos" class="active ingresos-egresos-button">Ingresos</button>
+                <button id="botonEgresos" class="ingresos-egresos-button">Egresos</button>
+                <ul id="lista"></ul>
+            </section>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
